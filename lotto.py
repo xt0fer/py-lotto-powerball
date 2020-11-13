@@ -23,20 +23,20 @@ def pick_lotto():
 def run():
 	done=0
 	while not done:
-	  try: x=raw_input('\npress Enter for Lotto picks (Q to quit). ')
+	  try: x = input('\npress Enter for Lotto picks (Q to quit). ')
 	  except EOFError:
 		x = 'q'
 	  if x and (x[0] == 'q' or x[0] == 'Q'):
 	        done=1
-	        print 'done'
+	        print('done')
 	  else:
-	        print pick_lotto()
+	        print(pick_lotto())
 
 # immediate-mode commands, for drag-and-drop or execfile() execution
 if __name__ == '__main__':
 	run()
 else:
-	print "Module lotto imported." 
-	print "To run, type: lotto.run()" 
-	print "To reload after changes to the source, type: reload(lotto)" 
+	print("Module lotto imported.")
+	print("To run, type: lotto.run()")
+	print("To reload after changes to the source, type: reload(lotto)")
 # end of lotto.py
