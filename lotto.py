@@ -4,37 +4,18 @@ from random import randint
 
 
 def pick_lotto():
-	maxm = 53
-	maxj = 6
-	m = maxm
-	r = list(range(m + 1))
-	v = []
-	for j in range(maxj):
-		i = randint(1, m)
-		n = r[i]
-		r[i:i+1] = []
-		m = m - 1
-		v.append(n)
-	return v
-	# maxm = 53
-	# maxj = 6
-	# m = maxm
-	#
-    # # create all numbers from 0 to m
-	#
-	# r = range(m + 1)
-    # # start with an empty result
-    # v = []
-	# for j in range(maxj):
-    #     # get ith number from r...
-    #     i = randint(1, m)
-    #     n = r[i]
-    #     # remove it from r...
-    #     r[i:i + 1] = []
-    #     m = m - 1
-    #     # and append to the result
-    #     v.append(n)
-    # return v
+    maxm = 53
+    maxj = 6
+    m = maxm
+    r = list(range(m + 1))
+    v = []
+    for j in range(maxj):
+        i = randint(1, m)
+        n = r[i]
+        r[i:i + 1] = []
+        m = m - 1
+        v.append(n)
+    return v
 
 
 def run():
